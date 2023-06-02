@@ -1,60 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Productos</title>
+    <style>
+       /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #D3D3D3;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, section, footer {
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        margin: 0;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Estilos para las secciones */
+    section {
+        background-color: #8DB3E2;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para la lista de productos */
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .product {
+        background-color: #4F94CD;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+        /*max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;*/
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+    }
+
+    .product h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .product p {
+        margin-bottom: 10px;
+    }
+
+    .product a {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    .product a:hover {
+        background-color: #555;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenidos a mi página web</h1>
-  </header>
+    <header>
+        <h1>Pointer Instrument Services SAS</h1>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca">Acerca de mí</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+    <section>
+        <h2>Productos Destacados</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://pointerinstrument.com/images/BlockStopSystem.png" alt="Block Stop">
+                <h3>Sistema de protección de bloque</h3>
+                <p>Es un sistema diseñado para proteger el Rig de colisiones del bloque, ya sea contra la corona o contra la mesa</p>
+                <a href="detalles-producto.html">Ver detalles</a>
+            </div>
+            <!-- Repite este bloque para cada producto -->
+        </div>
+    </section>
 
-  <section id="inicio">
-    <h2>¡Bienvenidos!</h2>
-    <p>Esta es mi página web personal. Aquí compartiré información sobre mis intereses y experiencias.</p>
-  </section>
+    <section>
+        <h2>Todos los Productos</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="ruta-a-la-imagen-del-producto" alt="Nombre del Producto">
+                <h3>Nombre del Producto</h3>
+                <p>Descripción del Producto</p>
+                <a href="detalles-producto.html">Ver detalles</a>
+            </div>
+            <!-- Repite este bloque para cada producto -->
+        </div>
+    </section>
 
-  <section id="acerca">
-    <h2>Acerca de mí</h2>
-    <p>Soy Santiago Alejandro Duarte Hernandez. Me apasiona el diseño web y la creación de experiencias digitales memorables.</p>
-  </section>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Diseño web</li>
-      <li>Desarrollo de aplicaciones web</li>
-      <li>Optimización de motores de búsqueda (SEO)</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Puedes contactarme a través del siguiente formulario:</p>
-    <form action="/enviar" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required><br>
-
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required><br>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea><br>
-
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-
-  <footer>
-    <p>Derechos de autor &copy; 2023 Santiago Alejandro Duarte Hernandez. Todos los derechos reservados.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
