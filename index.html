@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Página Web</title>
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a mi página web</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca de mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <h2>¡Bienvenidos!</h2>
+    <p>Esta es mi página web personal. Aquí compartiré información sobre mis intereses y experiencias.</p>
+  </section>
+
+  <section id="acerca">
+    <h2>Acerca de mí</h2>
+    <p>Soy Santiago Alejandro Duarte Hernandez. Me apasiona el diseño web y la creación de experiencias digitales memorables.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Diseño web</li>
+      <li>Desarrollo de aplicaciones web</li>
+      <li>Optimización de motores de búsqueda (SEO)</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través del siguiente formulario:</p>
+    <form action="/enviar" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required><br>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Santiago Alejandro Duarte Hernandez. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
